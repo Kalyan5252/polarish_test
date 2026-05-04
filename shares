@@ -9,3 +9,12 @@ https://in.pinterest.com/pin/6333255725023496/
 https://svgl.app/directory/software
 
 https://www.figma.com/design/UEg8DiDooIDrzoW0O7eImQ/Elderconnect?node-id=0-1&t=NTYBl1lyaRggZxYj-1
+
+
+var targetLayer = thisComp.layer("Stroke");
+var rect = targetLayer.sourceRectAtTime(time, false);
+
+var x = rect.left;
+var y = rect.top;
+var localPoint = [x, y];
+targetLayer.toComp(localPoint);
