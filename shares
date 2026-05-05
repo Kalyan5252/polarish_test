@@ -18,3 +18,17 @@ var x = rect.left;
 var y = rect.top;
 var localPoint = [x, y];
 targetLayer.toComp(localPoint);
+
+bounce
+delay = .020 ;
+myDelay = delay*textIndex;
+t = (time - inPoint) - myDelay;
+if (t >= 0){
+  freq =3;
+  amplitude = 50;
+  decay = 7.0;
+  s = amplitude*Math.cos(freq*t*2*Math.PI)/Math.exp(decay*t);
+  [s,s]
+}else{
+  value
+}
